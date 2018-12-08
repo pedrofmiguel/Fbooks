@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>FBook</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+
+<body class="landing">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1>
+            <strong>
+                <a id="Fletter" href="index.html">F</a>
+            </strong></h1>
+        <nav id="nav">
+            <ul>
+
+                <li>
+                    <a href="registo.html" id="navLogin">Login/Registo</a>
+                </li>
+
+                <li>
+                    <a href="registodelivros.html" id="navRegistoLivros">Registo de livros</a>
+                </li>
+                <li>
+                    <a href="catalogo.html" id="navCatalogo">Catálogo</a>
+                </li>
+                <li>
+                    <a href="requisicoes.html" id="navRequisicoes">Requisições</a>
+                </li>
+                <li>
+                    <a href="perfil.html" id="navPerfil">Perfil</a>
+                </li>
+                <li>
+                    <a id="navLogout">LogOut</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="#menu" class="navPanelToggle">
+        <span class="fa fa-bars"></span>
+    </a>
+
+    <!-- Banner -->
+    <section id="banner">
+        <h2>FBOOK</h2>
+        <p>Regista os teus livros na nossa base de dados.
+        </p>
+
+    </section>
+
+
+
+    <!-- Registo de Livros -->
+    <section id="one" class="wrapper style1">
+        <form id="formLivros">
+            <div class="container 75%">
+                <div class="row 200%">
+                    <div class="6u 12u$(medium)">
+                        <label for="tituloLivro">Titulo Do Livro</label>
+                        <input id="tituloLivro" type="text" required>
+                        <br>
+                        <br>
+                        <label for="autorLivro">Autor</label>
+                        <input id="autorLivro" type="text" required>
+                        <br>
+                        <br>
+                        <label for="disp_req">Disponivel para Requisição</label>
+                        <select id="disp_req">
+                            <option value="Disponivel">Disponivel</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="editoraLivro">Editora</label>
+                        <input id="editoraLivro" type="text" required>
+                        <br>
+                        <br>
+                        <label for="anoLivro">Ano de lançamento</label>
+                        <input id="anoLivro" type="number" min="1910" max="2018" step="1" value="2016" required>
+                    </div>
+                    <div class="6u$ 12u$(medium)">
+                        <label for="generoLivro">Genero</label>
+                        <select id="generoLivro">
+                            <option value="romance">Romance</option>
+                            <option value="drama">Drama</option>
+                            <option value="thriller">Thriller</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="fantasia">Fantasia</option>
+                            <option value="aventura">Aventura</option>
+                              <option value="didatico">Didático</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="imgLivro">Link da capa</label>
+                        <input type="url" id="imgLivro" placeholder="http://" required>
+                        <br>
+                        <br>
+
+                        <br>
+                        <label for="descLivro">Descrição</label>
+                        <textarea id="descLivro"> </textarea>
+                        <br>
+                        <br>
+                        <button id="registarLivro" type="submit">Registar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    
+    <hr> 
+    <!--EMAIL SENDER -->
+   
+    <center>
+       
+        <br>
+        <div class="jumbotron p-4 col-xl-6" id="emailsender"> 
+            <form class="was-validated" id="contact">
+                
+                  <br>
+    <h1 class="text-cabecalho text-center">Contacta a equipa Fbook</h1>
+    <p  class="text-cabecalho text-center"  >Se tiveres algum problema contacta-nos.</p>
+    <br>
+             <!--<div class="form-group col-xl-7">-->
+             <!--      <label style="text-align: left">Introduza o seu email</label>-->
+             <!--      <input type="email" class="form-control" id="email" placeholder="Email" required>-->
+             <!--  </div> -->
+                <div class="form-group col-xl-7">
+                    <label>Assunto</label>
+                    <input type="text" class="form-control" id="assunto" placeholder="Escreva o assunto" required>
+                </div>
+                <div class="form-group col-xl-7">
+                    <label for="confPass">Corpo da mensagem</label>
+                    <textarea rows="10" cols="60" class=" form-control col-xl-12" id="mensag" placeholder="Escreva a sua mensagem" required></textarea>
+                </div>
+
+
+                <div class="col-4">
+                    <button  value="Enviar" class="btn btn-clique col-xl-10" type="submit" >Enviar mensagem</button>
+                </div>
+        </div>
+        </form>
+        </div>
+    </center>
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li>
+                    <a href="#" class="icon fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-instagram"></a>
+                </li>
+            </ul>
+            <br> Estudantes do Campus2 Vila do Conde/Póvoa de Varzim <br> Projeto 2 - Tecnologia e Sistemas de Informação para a Web <br> Gonçalo Perdigão, Pedro Ferreira e Francisco Fernandes
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.10.2/validator.min.js"></script>
+
+
+
+    <script type="text/javascript" src="./controller/session.controller.js"></script>
+    <script type="text/javascript" src="./controller/registodelivros.controller.js"></script>
+    <script type="text/javascript" src="./controller/email.controller.js"></script>
+
+</body>
+
+</html>

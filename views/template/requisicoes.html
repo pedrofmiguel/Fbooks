@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>FBook</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Bootstrap CSS Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+
+<body class="landing">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1>
+            <strong>
+                <a id="Fletter" class="active" href="index.html">F</a>
+            </strong></h1>
+        <nav id="nav">
+            <ul>
+
+                <li>
+                    <a href="registo.html" id="navLogin">Login/Registo</a>
+                </li>
+
+                <li>
+                    <a href="registodelivros.html" id="navRegistoLivros">Registo de livros</a>
+                </li>
+                <li>
+                    <a href="catalogo.html" id="navCatalogo">Catálogo</a>
+                </li>
+                <li>
+                    <a href="requisicoes.html" id="navRequisicoes">Requisições</a>
+                </li>
+                <li>
+                    <a href="perfil.html" id="navPerfil">Perfil</a>
+                </li>
+                <li>
+                    <a id="navLogout">LogOut</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="#menu" class="navPanelToggle">
+        <span class="fa fa-bars"></span>
+    </a>
+
+    <!-- Banner -->
+    <section id="banner">
+        <h2>FBOOK</h2>
+        <p>Requisições Feitas e Requisições à espera de Aprovação
+        </p>
+
+    </section>
+
+
+    <!-- One -->
+    <section id="one" class="wrapper style1">
+        <div class="container 75%">
+            <div class="row 200%">
+
+                <h3 class="align-center">As Requisições Que Me Foram Feitas</h3>
+                <br>
+                <br>
+                
+                
+                <div id="tblReqs" class='table-responsive'>
+                    
+                </div>
+                <!-- Fim do container principal  -->
+                <br>
+                <br>´
+                <br>
+
+            </div>
+    </section>
+
+    <section id="two" class="">
+        <div class="container 75%">
+            <div class="row 200%">
+
+
+                <!-- Tabela das Minhas requisições -->
+                <h3 class="align-center" >As Minhas Requisições</h3>
+                <br> 
+                <br>
+                <div id="minhasReqs" class='table-responsive'>
+                </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li>
+                    <a href="#" class="icon fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-instagram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.10.2/validator.min.js"></script>
+
+    <script type="text/javascript" src="./controller/requisicoes.controller.js"></script>
+    <script type="text/javascript" src="./controller/session.controller.js"></script>
+</body>
+
+</html>

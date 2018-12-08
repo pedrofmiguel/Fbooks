@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login e Registo</title>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel="stylesheet" href="./template/css/style.css">
+
+
+  <!-- -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+  <a href="/">
+      <img id="logoImg" src="./template/images/logo.png">
+	 </a>
+
+  <!--L O G I N -->
+  <div class="cont">
+    <div class="form sign-in">
+      <form id="formLogin"> 
+      <h2>Bem vindo,</h2>
+      <label>
+      <span>Username</span>
+      <input id="usernameLogin" type="text" />
+    </label>
+      <label>
+      <span>Password</span>
+      <input id="passwordLogin" type="password" />
+    </label>
+      <button id="loginBtn" type="submit" name="submit" class="submit action-button">Login</button>
+    </div>
+     </form>
+    
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img__text m--up">
+          <h2>Novo aqui?</h2>
+          <p>Regista-te já para começares a emprestar e requisitar livros.</p>
+        </div>
+        <div class="img__text m--in">
+          <h2>Já tens conta?</h2>
+          <p>Faz já login! </p>
+        </div>
+        <div class="img__btn">
+          <span class="m--up">Registar</span>
+          <span class="m--in">Entrar</span>
+        </div>
+      </div>
+
+      <form id="formRegisto">
+          <h2>Registo </h2>
+          
+          
+          <!-- Nome -->
+          <label>
+          <span>Nome</span>
+          <input id="name" type="text" required />
+        </label>
+
+          <!-- Username -->
+          <label>
+          <span>Username</span>
+          <input id="username" type="text" required/>
+        </label>
+
+          <!-- Email -->
+          <label>
+          <span>Email</span>
+          <input id="email" type="email" required/>
+        </label>
+
+          <!-- Telemovel -->
+          <label>
+          <span>Telemóvel</span>
+          <input id="telemovel" type="number"/ required>
+        </label>
+
+          <!-- Password -->
+          <label>
+          <span>Password</span>
+          <input id="password" type="password" required />
+        </label>
+
+
+          <!-- Data-De-Nascimento -->
+          <label>
+          <span>Data de Nascimento</span>
+          <input type="date" id="data_de_nascimento" required>
+        </label>
+
+          <!-- Gênero -->
+          <label>
+          <span>Gênero</span>
+          <select name="Genero" id="genero">
+            <option value="Default" selected>Por favor selecione uma opção</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+          </select>
+        </label>
+          <!-- Morada -->
+          <label>
+          <span>Morada</span>
+          <input type="text" id="morada">
+        </label>
+        <br> 
+                <input id="btnRegisto" type="submit" name="submit" class="submit action-button" value="Registar" />
+      </form>
+      
+      
+      </div>
+    </div>
+  </div>
+
+
+  <!--JQUERY-->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.10.2/validator.min.js"></script>
+ 
+  <script type="text/javascript" src="./controller/registo.controller.js"></script>
+  <script type="text/javascript" src="./controller/email.controller.js"></script>
+  <script>
+    //código para a transição do template.
+    document.querySelector('.img__btn').addEventListener('click', function() {
+      document.querySelector('.cont').classList.toggle('s--signup');
+    });
+  </script>
+</body>
+
+</html>
+
